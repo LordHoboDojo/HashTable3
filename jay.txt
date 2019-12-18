@@ -1,0 +1,35 @@
+0.1
+Type of Hashing: Linear Probing
+Average insertion time: 3.22E-4
+Collisions: 532663
+Collisions per insertion: 1.065326
+Average Probes per successful search: 0.064
+Average Probes per unsuccessful search: 1.1425
+0.5
+Type of Hashing: Linear Probing
+Average insertion time: 2.82E-4
+Collisions: 871445
+Collisions per insertion: 1.74289
+Average Probes per successful search: 0.7298
+Average Probes per unsuccessful search: 3.428
+0.8
+Type of Hashing: Linear Probing
+Average insertion time: 5.6E-4
+Collisions: 1615777
+Collisions per insertion: 3.231554
+Average Probes per successful search: 2.2476
+Average Probes per unsuccessful search: 16.2952
+0.9
+Type of Hashing: Linear Probing
+Average insertion time: 6.18E-4
+Collisions: 3000932
+Collisions per insertion: 6.001864
+Average Probes per successful search: 4.6132
+Average Probes per unsuccessful search: 59.7725
+1.0
+Type of Hashing: Linear Probing
+Average insertion time: 0.072176
+Collisions: 314125001
+Collisions per insertion: 628.250002
+Average Probes per successful search: 543.1713
+Average Probes per unsuccessful search: 500000.0

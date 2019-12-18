@@ -72,15 +72,16 @@ public class HashTable {
     int getProbes(Object key)
     {
         int t = Math.abs(key.hashCode() %data.length);
+        int start = t;
         int probes =0;
-        while (data[t] !=null)
-        {
-            if (data[t].key.equals(key)&&!data[t].removed) {
+       do {
+            if (data[t] !=null&& data[t].key.equals(key)&& !data[t].removed){
                 return probes;
             }
+            t = (t+1) %data.length;
             probes++;
-            t = (t+1) % data.length;
         }
+        while (data[t] !=null&& start!=t);
         return probes;
     }
     int getIndex(Object key)

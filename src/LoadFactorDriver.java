@@ -20,8 +20,8 @@ public class LoadFactorDriver {
             writer.append("Average insertion time: ").append(String.valueOf(measureInsertionPerformance(loadFactor))).append("\n");
             writer.append("Collisions: ").append(String.valueOf(measureCollisions(loadFactor))).append("\n");
             writer.append("Collisions per insertion: ").append(String.valueOf(measureCollisions(loadFactor)/500000.0)).append("\n");
-            writer.append("Average Probes per successful search: ").append(String.valueOf(measureProbes(loadFactor,true))).append("\n");;
-            writer.append("Average Probes per unsuccessful search: ").append(String.valueOf(measureProbes(loadFactor,false))).append("\n");;
+            writer.append("Average Probes per successful search: ").append(String.valueOf(measureProbes(loadFactor,true))).append("\n");
+            writer.append("Average Probes per unsuccessful search: ").append(String.valueOf(measureProbes(loadFactor,false))).append("\n");
         }
         writer.flush();
         writer.close();
@@ -43,9 +43,13 @@ public class LoadFactorDriver {
         }
         else
         {
+            int i =0;
+            System.out.println(loadFactor);
             for (String s : unsuccessful){
                 String[] dat = s.split(" ");
                 sum += table.getProbes(dat[0]);
+                System.out.println(i);
+                i++;
             }
         }
 
