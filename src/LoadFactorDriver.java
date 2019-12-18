@@ -43,13 +43,10 @@ public class LoadFactorDriver {
         }
         else
         {
-            int i =0;
-            System.out.println(loadFactor);
+
             for (String s : unsuccessful){
                 String[] dat = s.split(" ");
                 sum += table.getProbes(dat[0]);
-                System.out.println(i);
-                i++;
             }
         }
 
