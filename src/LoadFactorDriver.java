@@ -74,7 +74,6 @@ public class LoadFactorDriver {
      private static double measureInsertionPerformance(double loadFactor){
         int size = (int) (500000.0/loadFactor);
         double sum = 0;
-        int i=0;
         HashTable table = new HashTable(size);
          long start = System.currentTimeMillis();
          long stop = System.currentTimeMillis();
@@ -83,7 +82,6 @@ public class LoadFactorDriver {
              start = System.currentTimeMillis();
              table.put(dat[0],dat[1] + " " +dat[2]);
              stop = System.currentTimeMillis();
-             i++;
              sum += stop-start;
         }
          return (sum/500000);
